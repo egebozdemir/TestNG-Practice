@@ -1,25 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-12T02:30:56 TRT" name="Default suite" finished-at="2024-02-12T02:30:56 TRT" duration-ms="41">
+  <suite started-at="2024-02-12T02:48:56 TRT" name="Suite" finished-at="2024-02-12T02:48:56 TRT" duration-ms="193">
     <groups>
+      <group name="Smoke">
+        <method signature="day1.SecondTest()[pri:0, instance:test.day1@2e8c1c9b]" name="SecondTest" class="test.day1"/>
+        <method signature="day2.Demo()[pri:0, instance:test.day2@76a4ebf2]" name="Demo" class="test.day2"/>
+        <method signature="day3.WebLoginCarLoan(java.lang.String)[pri:0, instance:test.day3@644baf4a]" name="WebLoginCarLoan" class="test.day3"/>
+        <method signature="day3.WebLoginCarLoan(java.lang.String)[pri:0, instance:test.day3@18271936]" name="WebLoginCarLoan" class="test.day3"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-02-12T02:30:56 TRT" name="Default test" finished-at="2024-02-12T02:30:56 TRT" duration-ms="41">
-      <class name="test.TestChild">
-        <test-method is-config="true" signature="beforeRun()[pri:0, instance:test.TestChild@12aba8be]" started-at="2024-02-12T02:30:56 TRT" name="beforeRun" finished-at="2024-02-12T02:30:56 TRT" duration-ms="6" status="PASS">
+    <test started-at="2024-02-12T02:48:56 TRT" name="Personal Loan" finished-at="2024-02-12T02:48:56 TRT" duration-ms="65">
+      <class name="test.day2">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:test.day2@76a4ebf2]" started-at="2024-02-12T02:48:56 TRT" name="prerequisite" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeRun -->
-        <test-method signature="childTestRun()[pri:0, instance:test.TestChild@12aba8be]" started-at="2024-02-12T02:30:56 TRT" name="childTestRun" finished-at="2024-02-12T02:30:56 TRT" duration-ms="5" status="PASS">
+        </test-method> <!-- prerequisite -->
+        <test-method signature="Demo()[pri:0, instance:test.day2@76a4ebf2]" started-at="2024-02-12T02:48:56 TRT" name="Demo" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo -->
+        <test-method is-config="true" signature="postrequisite()[pri:0, instance:test.day2@76a4ebf2]" started-at="2024-02-12T02:48:56 TRT" name="postrequisite" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postrequisite -->
+      </class> <!-- test.day2 -->
+      <class name="test.day3">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.day3@644baf4a]" started-at="2024-02-12T02:48:56 TRT" name="beforeClass" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="BeforeEvery()[pri:0, instance:test.day3@644baf4a]" started-at="2024-02-12T02:48:56 TRT" name="BeforeEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method signature="WebLoginCarLoan(java.lang.String)[pri:0, instance:test.day3@644baf4a]" started-at="2024-02-12T02:48:56 TRT" name="WebLoginCarLoan" finished-at="2024-02-12T02:48:56 TRT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaclickacademy.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCarLoan -->
+        <test-method is-config="true" signature="AfterEvery()[pri:0, instance:test.day3@644baf4a]" started-at="2024-02-12T02:48:56 TRT" name="AfterEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEvery -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.day3@644baf4a]" started-at="2024-02-12T02:48:56 TRT" name="afterClass" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.day3 -->
+      <class name="test.day1">
+        <test-method signature="Demo()[pri:0, instance:test.day1@2e8c1c9b]" started-at="2024-02-12T02:48:56 TRT" name="Demo" finished-at="2024-02-12T02:48:56 TRT" duration-ms="9" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at test.day1.Demo(day1.java:12)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo -->
+        <test-method signature="SecondTest()[pri:0, instance:test.day1@2e8c1c9b]" started-at="2024-02-12T02:48:56 TRT" name="SecondTest" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondTest -->
+      </class> <!-- test.day1 -->
+    </test> <!-- Personal Loan -->
+    <test started-at="2024-02-12T02:48:56 TRT" name="Car Loan" finished-at="2024-02-12T02:48:56 TRT" duration-ms="35">
+      <class name="test.day4">
+        <test-method signature="LoginApiHomeLoan()[pri:0, instance:test.day4@909217e]" started-at="2024-02-12T02:48:56 TRT" name="LoginApiHomeLoan" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginApiHomeLoan -->
+        <test-method signature="WebLoginHomeLoan(java.lang.String,java.lang.String)[pri:0, instance:test.day4@909217e]" started-at="2024-02-12T02:48:56 TRT" name="WebLoginHomeLoan" finished-at="2024-02-12T02:48:56 TRT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[carloan.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginHomeLoan -->
+      </class> <!-- test.day4 -->
+      <class name="test.day3">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="beforeClass" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="BeforeEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="BeforeEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method signature="LogoutAPICarLoan(java.lang.String,java.lang.String)[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="LogoutAPICarLoan" data-provider="getData" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutAPICarLoan -->
+        <test-method is-config="true" signature="AfterEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="AfterEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEvery -->
+        <test-method signature="LogoutAPICarLoan(java.lang.String,java.lang.String)[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="LogoutAPICarLoan" data-provider="getData" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secondPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutAPICarLoan -->
+        <test-method is-config="true" signature="BeforeEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="BeforeEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method is-config="true" signature="AfterEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="AfterEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEvery -->
+        <test-method signature="LogoutAPICarLoan(java.lang.String,java.lang.String)[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="LogoutAPICarLoan" data-provider="getData" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thirdPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutAPICarLoan -->
+        <test-method is-config="true" signature="BeforeEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="BeforeEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method is-config="true" signature="AfterEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="AfterEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEvery -->
+        <test-method signature="WebLoginCarLoan(java.lang.String)[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="WebLoginCarLoan" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[carloan.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCarLoan -->
+        <test-method is-config="true" signature="BeforeEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="BeforeEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method is-config="true" signature="AfterEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="AfterEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEvery -->
+        <test-method is-config="true" signature="BeforeEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="BeforeEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method signature="MobileLogOutCarLoan()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="MobileLogOutCarLoan" finished-at="2024-02-12T02:48:56 TRT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogOutCarLoan -->
+        <test-method is-config="true" signature="AfterEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="AfterEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEvery -->
+        <test-method is-config="true" signature="BeforeEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="BeforeEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method signature="MobileLoginCarLoan()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="MobileLoginCarLoan" finished-at="2024-02-12T02:48:56 TRT" depends-on-methods="test.day3.WebLoginCarLoan" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginCarLoan -->
+        <test-method is-config="true" signature="AfterEvery()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="AfterEvery" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEvery -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="afterClass" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.day3 -->
+    </test> <!-- Car Loan -->
+    <test started-at="2024-02-12T02:48:56 TRT" name="Core Java" finished-at="2024-02-12T02:48:56 TRT" duration-ms="6">
+      <class name="test.TestChild">
+        <test-method signature="childTestRun()[pri:0, instance:test.TestChild@353352b6]" started-at="2024-02-12T02:48:56 TRT" name="childTestRun" finished-at="2024-02-12T02:48:56 TRT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- childTestRun -->
-        <test-method is-config="true" signature="afterRun()[pri:0, instance:test.TestChild@12aba8be]" started-at="2024-02-12T02:30:56 TRT" name="afterRun" finished-at="2024-02-12T02:30:56 TRT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeRun()[pri:0, instance:test.TestChild@353352b6]" started-at="2024-02-12T02:48:56 TRT" name="beforeRun" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeRun -->
+        <test-method is-config="true" signature="afterRun()[pri:0, instance:test.TestChild@353352b6]" started-at="2024-02-12T02:48:56 TRT" name="afterRun" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterRun -->
       </class> <!-- test.TestChild -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="test.day3">
+        <test-method is-config="true" signature="Bfsuite()[pri:0, instance:test.day3@18271936]" started-at="2024-02-12T02:48:56 TRT" name="Bfsuite" finished-at="2024-02-12T02:48:56 TRT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bfsuite -->
+      </class> <!-- test.day3 -->
+      <class name="test.day1">
+        <test-method is-config="true" signature="Bfsuite()[pri:0, instance:test.day1@2e8c1c9b]" started-at="2024-02-12T02:48:56 TRT" name="Bfsuite" finished-at="2024-02-12T02:48:56 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bfsuite -->
+      </class> <!-- test.day1 -->
+    </test> <!-- Core Java -->
+  </suite> <!-- Suite -->
 </testng-results>

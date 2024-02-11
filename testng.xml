@@ -32,5 +32,11 @@
 		  		<class name="test.day3"></class>
 		  	</classes>
 	  </test>  <!-- Test -->
+	  
+	  <test name="Core Java">
+	  	<classes>
+	  		<class name="test.TestChild"></class>
+	  	</classes>
+	  </test>  <!-- Test -->
   
 </suite> <!-- Suite -->
