@@ -2,14 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="URL" value="qaclickacademy.com"/>
-  <test thread-count="5" name="Car Loan(failed)">
-    <parameter name="URL" value="carloan.com"/>
+  <listeners>
+    <listener class-name="test.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Personal Loan(failed)">
     <classes>
-      <class name="test.day4">
+      <class name="test.day1">
         <methods>
-          <include name="WebLoginHomeLoan"/>
+          <include name="Bfsuite"/>
+          <include name="Demo"/>
         </methods>
-      </class> <!-- test.day4 -->
+      </class> <!-- test.day1 -->
     </classes>
-  </test> <!-- Car Loan(failed) -->
+  </test> <!-- Personal Loan(failed) -->
 </suite> <!-- Failed suite [Suite] -->

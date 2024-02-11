@@ -1,14 +1,17 @@
 package test;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class day4 {
 
+	@Parameters({"URL","APIKey"})
 	@Test
-	public void WebLoginHomeLoan(String urlname) {
+	public void WebLoginHomeLoan(String urlname, String key) {
 		//selenium
 		System.out.println("WebLoginHome");
 		System.out.println(urlname);
+		System.out.println(key);
 
 	}
 	

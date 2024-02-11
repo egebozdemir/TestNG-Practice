@@ -1,133 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-11T04:44:53 TRT" name="Suite" finished-at="2024-02-11T04:44:53 TRT" duration-ms="135">
+  <suite started-at="2024-02-12T02:30:56 TRT" name="Default suite" finished-at="2024-02-12T02:30:56 TRT" duration-ms="41">
     <groups>
-      <group name="Smoke">
-        <method signature="day1.SecondTest()[pri:0, instance:test.day1@1a6d8329]" name="SecondTest" class="test.day1"/>
-        <method signature="day2.Demo()[pri:0, instance:test.day2@368247b9]" name="Demo" class="test.day2"/>
-        <method signature="day3.WebLoginCarLoan(java.lang.String)[pri:0, instance:test.day3@45099dd3]" name="WebLoginCarLoan" class="test.day3"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-02-11T04:44:53 TRT" name="Personal Loan" finished-at="2024-02-11T04:44:53 TRT" duration-ms="46">
-      <class name="test.day2">
-        <test-method is-config="true" signature="prerequisite()[pri:0, instance:test.day2@368247b9]" started-at="2024-02-11T04:44:53 TRT" name="prerequisite" finished-at="2024-02-11T04:44:53 TRT" duration-ms="1" status="PASS">
+    <test started-at="2024-02-12T02:30:56 TRT" name="Default test" finished-at="2024-02-12T02:30:56 TRT" duration-ms="41">
+      <class name="test.TestChild">
+        <test-method is-config="true" signature="beforeRun()[pri:0, instance:test.TestChild@12aba8be]" started-at="2024-02-12T02:30:56 TRT" name="beforeRun" finished-at="2024-02-12T02:30:56 TRT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- prerequisite -->
-        <test-method signature="Demo()[pri:0, instance:test.day2@368247b9]" started-at="2024-02-11T04:44:53 TRT" name="Demo" finished-at="2024-02-11T04:44:53 TRT" duration-ms="2" status="PASS">
+        </test-method> <!-- beforeRun -->
+        <test-method signature="childTestRun()[pri:0, instance:test.TestChild@12aba8be]" started-at="2024-02-12T02:30:56 TRT" name="childTestRun" finished-at="2024-02-12T02:30:56 TRT" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Demo -->
-        <test-method is-config="true" signature="postrequisite()[pri:0, instance:test.day2@368247b9]" started-at="2024-02-11T04:44:53 TRT" name="postrequisite" finished-at="2024-02-11T04:44:53 TRT" duration-ms="0" status="PASS">
+        </test-method> <!-- childTestRun -->
+        <test-method is-config="true" signature="afterRun()[pri:0, instance:test.TestChild@12aba8be]" started-at="2024-02-12T02:30:56 TRT" name="afterRun" finished-at="2024-02-12T02:30:56 TRT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postrequisite -->
-      </class> <!-- test.day2 -->
-      <class name="test.day3">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.day3@45099dd3]" started-at="2024-02-11T04:44:53 TRT" name="beforeClass" finished-at="2024-02-11T04:44:53 TRT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="BeforeEvery()[pri:0, instance:test.day3@45099dd3]" started-at="2024-02-11T04:44:53 TRT" name="BeforeEvery" finished-at="2024-02-11T04:44:53 TRT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeEvery -->
-        <test-method signature="WebLoginCarLoan(java.lang.String)[pri:0, instance:test.day3@45099dd3]" started-at="2024-02-11T04:44:53 TRT" name="WebLoginCarLoan" finished-at="2024-02-11T04:44:53 TRT" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[qaclickacademy.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WebLoginCarLoan -->
-        <test-method is-config="true" signature="AfterEvery()[pri:0, instance:test.day3@45099dd3]" started-at="2024-02-11T04:44:53 TRT" name="AfterEvery" finished-at="2024-02-11T04:44:53 TRT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterEvery -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.day3@45099dd3]" started-at="2024-02-11T04:44:53 TRT" name="afterClass" finished-at="2024-02-11T04:44:53 TRT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- test.day3 -->
-      <class name="test.day1">
-        <test-method signature="Demo()[pri:0, instance:test.day1@1a6d8329]" started-at="2024-02-11T04:44:53 TRT" name="Demo" finished-at="2024-02-11T04:44:53 TRT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Demo -->
-        <test-method signature="SecondTest()[pri:0, instance:test.day1@1a6d8329]" started-at="2024-02-11T04:44:53 TRT" name="SecondTest" finished-at="2024-02-11T04:44:53 TRT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SecondTest -->
-      </class> <!-- test.day1 -->
-    </test> <!-- Personal Loan -->
-    <test started-at="2024-02-11T04:44:53 TRT" name="Car Loan" finished-at="2024-02-11T04:44:53 TRT" duration-ms="7">
-      <class name="test.day4">
-        <test-method signature="LoginApiHomeLoan()[pri:0, instance:test.day4@548d708a]" started-at="2024-02-11T04:44:53 TRT" name="LoginApiHomeLoan" finished-at="2024-02-11T04:44:53 TRT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginApiHomeLoan -->
-        <test-method signature="WebLoginHomeLoan(java.lang.String)[pri:0, instance:test.day4@548d708a]" started-at="2024-02-11T04:44:53 TRT" name="WebLoginHomeLoan" finished-at="2024-02-11T04:44:53 TRT" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Cannot inject @Test annotated Method [WebLoginHomeLoan] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Cannot inject @Test annotated Method [WebLoginHomeLoan] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:445)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-at org.testng.internal.Parameters.createParameters(Parameters.java:702)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WebLoginHomeLoan -->
-      </class> <!-- test.day4 -->
-      <class name="test.day3">
-        <test-method is-config="true" signature="Bfsuite()[pri:0, instance:test.day3@45099dd3]" started-at="2024-02-11T04:44:53 TRT" name="Bfsuite" finished-at="2024-02-11T04:44:53 TRT" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Bfsuite -->
-      </class> <!-- test.day3 -->
-      <class name="test.day1">
-        <test-method is-config="true" signature="Bfsuite()[pri:0, instance:test.day1@1a6d8329]" started-at="2024-02-11T04:44:53 TRT" name="Bfsuite" finished-at="2024-02-11T04:44:53 TRT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Bfsuite -->
-      </class> <!-- test.day1 -->
-    </test> <!-- Car Loan -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- afterRun -->
+      </class> <!-- test.TestChild -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
